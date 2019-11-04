@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">FragmentsExample</string>
+    <string name="frame_layout">Frame Layout</string>
+    <string name="fragment_container">Fragment Container</string>
+    <string name="title_activity_frame_layout">FrameLayoutActivity</string>
+    <string name="action_settings">Settings</string>
+    <string name="next">Next</string>
 </resources>

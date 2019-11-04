@@ -4,21 +4,15 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".feature.main.MainActivity">
+    tools:context=".feature.frame.FrameLayoutActivityFragment"
+    android:background="@color/colorFragmentBackgroundFirst"
+    tools:showIn="@layout/activity_frame_layout">
 
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="@dimen/margin_base"
-        android:text="@string/frame_layout"
-        app:layout_constraintBottom_toTopOf="@id/fragmentContainerButton"
-        android:id="@+id/frameLayoutButton"/>
-
-    <Button
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_margin="@dimen/margin_base"
-        android:text="@string/fragment_container"
         app:layout_constraintBottom_toBottomOf="parent"
-        android:id="@+id/fragmentContainerButton"/>
+        android:text="@string/next"
+        android:layout_margin="@dimen/margin_base"
+        android:id="@+id/fragmentFrameFirstButton"/>
 </androidx.constraintlayout.widget.ConstraintLayout>
