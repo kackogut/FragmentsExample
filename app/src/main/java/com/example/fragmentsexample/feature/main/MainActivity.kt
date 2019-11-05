@@ -1,8 +1,8 @@
 package com.example.fragmentsexample.feature.main
 
 import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import androidx.appcompat.app.AppCompatActivity
 import com.example.fragmentsexample.R
 import com.example.fragmentsexample.feature.container.ContainerActivity
 import com.example.fragmentsexample.feature.frame.FrameLayoutActivity
@@ -17,12 +17,12 @@ class MainActivity : AppCompatActivity() {
         initUIListeners()
     }
 
-    private fun initUIListeners(){
+    private fun initUIListeners() {
         fragmentContainerButton.setOnClickListener {
             startActivity(Intent(this, ContainerActivity::class.java))
         }
         frameLayoutButton.setOnClickListener {
-            startActivity(Intent(this,FrameLayoutActivity::class.java))
+            startActivity(Intent(this, FrameLayoutActivity::class.java))
         }
     }
 }
