@@ -5,6 +5,8 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
+import androidx.fragment.app.commit
+import androidx.fragment.app.replace
 import com.example.fragmentsexample.R
 import com.example.fragmentsexample.utils.Utils
 import kotlinx.android.synthetic.main.fragment_base.*
@@ -28,13 +30,18 @@ class BaseFragment : Fragment() {
 
         fragmentFrameConstraintLayout.setBackgroundColor(backgroundColor)
         fragmentFrameFirstButton.setOnClickListener {
-            parentFragmentManager.beginTransaction()
-                .setCustomAnimations(R.anim.enter_from_left, R.anim.exit_to_right, R.anim.enter_from_right, R.anim.exit_to_left)
-                .replace(R.id.fragment,
-                    BaseFragment()
+            parentFragmentManager.commit {
+                setCustomAnimations(
+                    R.anim.enter_from_right,
+                    R.anim.exit_to_left,
+                    R.anim.enter_from_left,
+                    R.anim.exit_to_right
                 )
-                .addToBackStack(null)
-                .commit()
+                replace<BaseFragment>(
+                    R.id.fragment
+                )
+                addToBackStack(null)
+            }
         }
     }
 }
