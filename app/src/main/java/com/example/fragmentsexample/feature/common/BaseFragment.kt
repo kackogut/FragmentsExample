@@ -11,10 +11,7 @@ import com.example.fragmentsexample.R
 import com.example.fragmentsexample.utils.Utils
 import kotlinx.android.synthetic.main.fragment_base.*
 
-/**
- * A placeholder fragment containing a simple view.
- */
-class BaseFragment : Fragment() {
+class BaseFragment(private val fragmentService: FragmentService) : Fragment() {
 
     private val backgroundColor = Utils.getRandomColor()
 
@@ -29,6 +26,9 @@ class BaseFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
 
         fragmentFrameConstraintLayout.setBackgroundColor(backgroundColor)
+
+        fragmentBaseNumberTextView.text = (++fragmentService.fragmentsCount).toString()
+
         fragmentFrameFirstButton.setOnClickListener {
             parentFragmentManager.commit {
                 setCustomAnimations(
