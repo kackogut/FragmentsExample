@@ -4,6 +4,7 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.example.fragmentsexample.R
+import com.example.fragmentsexample.feature.container.ContainerActivity
 import com.example.fragmentsexample.feature.frame.FrameLayoutActivity
 import kotlinx.android.synthetic.main.activity_main.*
 
@@ -18,7 +19,7 @@ class MainActivity : AppCompatActivity() {
 
     private fun initUIListeners(){
         fragmentContainerButton.setOnClickListener {
-
+            startActivity(Intent(this, ContainerActivity::class.java))
         }
         frameLayoutButton.setOnClickListener {
             startActivity(Intent(this,FrameLayoutActivity::class.java))
