@@ -7,18 +7,18 @@
     tools:context=".feature.main.MainActivity">
 
     <Button
+        android:id="@+id/frameLayoutButton"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="@dimen/margin_base"
         android:text="@string/frame_layout"
-        app:layout_constraintBottom_toTopOf="@id/fragmentContainerButton"
-        android:id="@+id/frameLayoutButton"/>
+        app:layout_constraintBottom_toTopOf="@id/fragmentContainerButton" />
 
     <Button
+        android:id="@+id/fragmentContainerButton"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="@dimen/margin_base"
         android:text="@string/fragment_container"
-        app:layout_constraintBottom_toBottomOf="parent"
-        android:id="@+id/fragmentContainerButton"/>
+        app:layout_constraintBottom_toBottomOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>
