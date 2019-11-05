@@ -4,8 +4,15 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:id="@+id/fragmentFrameConstraintLayout"
     tools:context=".feature.frame.FrameLayoutActivityFragment"
-    android:background="@color/colorFragmentBackgroundSecond"
     tools:showIn="@layout/activity_frame_layout">
 
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:text="@string/next"
+        android:layout_margin="@dimen/margin_base"
+        android:id="@+id/fragmentFrameFirstButton"/>
 </androidx.constraintlayout.widget.ConstraintLayout>
