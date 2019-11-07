@@ -1,6 +1,7 @@
 package com.example.fragmentsexample.feature.common
 
 import androidx.fragment.app.FragmentFactory
+import com.example.fragmentsexample.data.FragmentService
 
 class BaseFragmentFactory : FragmentFactory() {
 

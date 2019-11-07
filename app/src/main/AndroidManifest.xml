@@ -12,7 +12,7 @@
         android:theme="@style/AppTheme"
         tools:ignore="GoogleAppIndexingWarning">
         <activity
-            android:name=".feature.frame.FrameLayoutActivity"
+            android:name=".feature.fragment_old.FragmentOldActivity"
             android:label="@string/title_activity_frame_layout"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity android:name=".feature.main.MainActivity">

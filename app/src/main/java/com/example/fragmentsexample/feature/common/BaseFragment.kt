@@ -10,6 +10,7 @@ import androidx.fragment.app.Fragment
 import androidx.fragment.app.commit
 import androidx.fragment.app.replace
 import com.example.fragmentsexample.R
+import com.example.fragmentsexample.data.FragmentService
 import com.example.fragmentsexample.utils.Utils
 import kotlinx.android.synthetic.main.fragment_base.*
 

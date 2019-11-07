@@ -4,7 +4,7 @@ import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import com.example.fragmentsexample.R
 import com.example.fragmentsexample.feature.common.BaseFragmentFactory
-import kotlinx.android.synthetic.main.activity_frame_layout.*
+import kotlinx.android.synthetic.main.activity_fragment_old.*
 
 class ContainerActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
