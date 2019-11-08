@@ -26,6 +26,8 @@ class BaseFragment(private val fragmentService: FragmentService) : Fragment() {
         super.onCreate(savedInstanceState)
         callback = dispatcher.addCallback(this) {
             fragmentService.fragmentsCount--
+
+            //Called when user should be navigated back
             callback.isEnabled = false
             dispatcher.onBackPressed()
         }

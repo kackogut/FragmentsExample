@@ -13,7 +13,7 @@
         tools:ignore="GoogleAppIndexingWarning">
         <activity
             android:name=".feature.fragment_old.FragmentOldActivity"
-            android:label="@string/title_activity_frame_layout"
+            android:label="@string/title_activity_fragment_tag"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity android:name=".feature.main.MainActivity">
             <intent-filter>

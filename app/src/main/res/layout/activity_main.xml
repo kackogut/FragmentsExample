@@ -7,11 +7,11 @@
     tools:context=".feature.main.MainActivity">
 
     <Button
-        android:id="@+id/frameLayoutButton"
+        android:id="@+id/fragmentTagButton"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="@dimen/margin_base"
-        android:text="@string/frame_layout"
+        android:text="@string/fragment_tag"
         app:layout_constraintBottom_toTopOf="@id/fragmentContainerButton" />
 
     <Button

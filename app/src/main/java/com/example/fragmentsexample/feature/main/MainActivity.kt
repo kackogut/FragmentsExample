@@ -21,7 +21,7 @@ class MainActivity : AppCompatActivity() {
         fragmentContainerButton.setOnClickListener {
             startActivity(Intent(this, ContainerActivity::class.java))
         }
-        frameLayoutButton.setOnClickListener {
+        fragmentTagButton.setOnClickListener {
             startActivity(Intent(this, FragmentOldActivity::class.java))
         }
     }
